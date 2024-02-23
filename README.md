@@ -36,8 +36,7 @@ After running this program the output will be stored in a new directory (blender
 ## Visualizing in Blender
 Open Blender, select the default cube and press `x`, then select `delete`. In the top right side of the menu bar select `Scripting` and press the `New` button at the top of the scripting window. At this point the user will be able to code in the scripting window. Copy and paste the bpy_script.py here, then navigate to the main() in the script and copy/paste the path of the blender output folder. Lastly, press the play (will say "run script" when hovering over it) button at the top of the scripting window. The results should appear!
 
-* Important Note
-* If the resolution of the grid was not 1 angstrom, navigate to the setup_gn() and change the `cube_mesh.inputs[0].default_value` values to equal the xyz resoltution used in your analysis. 
+* Important -- If the resolution of the grid was not 1 angstrom, navigate to the setup_gn() and change the `cube_mesh.inputs[0].default_value` values to equal the xyz resoltution used in your analysis. 
 
 
 
