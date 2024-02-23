@@ -16,7 +16,7 @@ https://pdb2pqr.readthedocs.io/en/latest/ (PDB2PQR)
 
 https://apbs.readthedocs.io/en/latest/ (APBS)
 
-Conversely, the user can use the online webserver:
+Alternatively, the user can use the online webserver:
 
 https://server.poissonboltzmann.org/apbs
 
