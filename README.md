@@ -38,5 +38,14 @@ Open Blender, select the default cube and press `x`, then select `delete`. In th
 
 * Important -- If the resolution of the grid was not 1 angstrom, navigate to the setup_gn() and change the `cube_mesh.inputs[0].default_value` values to equal the xyz resoltution used in your analysis. 
 
+## Importing PDB Files to Blender
+There are a few methods to do this, but here PDB files are converted to GLB files. This can be done using ChimeraX when saving any protein structure within the app:
+
+https://www.rbvi.ucsf.edu/chimerax/download.html (ChimeraX)
+
+Alternatively the Molecular Nodes Blender add-on can open PDB files:
+
+https://bradyajohnston.github.io/MolecularNodes/installation.html (Molecular Nodes)
+
 
 
