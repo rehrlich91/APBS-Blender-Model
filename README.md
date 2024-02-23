@@ -12,12 +12,17 @@ Blender: 3.6.9 LTS
 ## Installation
 Previous to running APBS the user must convert PDB to PQR files using PDB2PQR. This conversion adds additional information to the PDB file such that APBS is able to more accruately determine energy values. The following link contains the PDB2PQR and APBS documentation:
 
-https://pdb2pqr.readthedocs.io/en/latest/
-https://apbs.readthedocs.io/en/latest/
+https://pdb2pqr.readthedocs.io/en/latest/ (PDB2PQR)
+
+https://apbs.readthedocs.io/en/latest/ (APBS)
 
 Conversely, the user can use the online webserver:
 
 https://server.poissonboltzmann.org/apbs
+
+Lastly, Blender can be downloaded here:
+
+https://www.blender.org/download/releases/3-6/ (Blender)
 
 ## Producing Blender Input Data
 Once the user has the desired *.dx files, they are able to produce the input *.csv file to visualize the results. A typical command line run (using the files provided) is:
@@ -29,7 +34,10 @@ python blenderVis_apbs.py -mif test_dx -pdb test_pdb -a apbs -c 4
 After running this program the output will be stored in a new directory (blender_output)
 
 ## Visualizing in Blender
+Open Blender, select the default cube and press `x`, then select `delete`. In the top right side of the menu bar select `Scripting` and press the `New` button at the top of the scripting window. At this point the user will be able to code in the scripting window. Copy and paste the bpy_script.py here, then navigate to the main() in the script and copy/paste the path of the blender output folder. Lastly, press the play (will say "run script" when hovering over it) button at the top of the scripting window. The results should appear!
 
+* Important note
+If the resolution of the grid was not 1 angstrom, navigate to the setup_gn() and change the `cube_mesh.inputs[0].default_value` values to equal the xyz resoltution used in your analysis. 
 
 
 
